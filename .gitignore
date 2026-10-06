@@ -1,0 +1,12 @@
+node_modules/
+.expo/
+dist/
+.env
+.env.local
+.dev.vars
+data/
+.sites-runtime/
+test-results/
+*.zip
+*.tar.gz
+native-dist/

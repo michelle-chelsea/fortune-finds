@@ -1,0 +1,50 @@
+{
+  "name": "bukti",
+  "version": "0.1.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "web": "expo start --web",
+    "build:web": "expo export --platform web --output-dir dist/client",
+    "build": "npm run build:web && node scripts/build.mjs",
+    "server": "node --experimental-strip-types server/local.ts",
+    "worker": "node --experimental-strip-types server/local-worker.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "setup": "tsx scripts/setup.ts",
+    "build:native": "expo export --platform android --platform ios --output-dir native-dist"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "15.1.1",
+    "csv-parse": "7.0.3",
+    "drizzle-orm": "0.45.3",
+    "expo": "57.0.26",
+    "expo-constants": "57.0.20",
+    "expo-document-picker": "57.0.3",
+    "expo-file-system": "57.0.7",
+    "expo-linking": "57.0.11",
+    "expo-router": "57.0.24",
+    "expo-secure-store": "57.0.4",
+    "expo-sharing": "57.0.22",
+    "expo-status-bar": "57.0.1",
+    "fflate": "0.8.3",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "5.7.0",
+    "react-native-screens": "4.26.2",
+    "react-native-web": "0.21.3",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.4",
+    "@types/react": "19.2.18",
+    "drizzle-kit": "0.31.11",
+    "esbuild": "0.28.2",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3"
+  },
+  "type": "module"
+}

@@ -1,0 +1,1 @@
+{"expo":{"name":"Bukti","slug":"bukti","scheme":"bukti","version":"0.1.0","orientation":"default","userInterfaceStyle":"light","plugins":["expo-router","expo-secure-store"],"web":{"bundler":"metro","output":"single","name":"Bukti · Affiliate workspace"},"android":{"package":"com.bukti.workspace"},"ios":{"bundleIdentifier":"com.bukti.workspace","supportsTablet":true}}}
